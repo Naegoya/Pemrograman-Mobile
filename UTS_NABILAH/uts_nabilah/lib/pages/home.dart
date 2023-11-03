@@ -207,6 +207,66 @@ class HomePageLink extends State<HomePage> {
                               Icons.account_balance_wallet_outlined,
                               size: 30,
                             ),
+                            Container(
+                              margin: const EdgeInsets.only(top: 5),
+                              child: const Text(
+                                'TopUp',
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                    ButtonBar(
+                      children: [
+                        Column(
+                          children: [
+                            const Icon(
+                              Icons.send_outlined,
+                              size: 30,
+                            ),
+                            Container(
+                              margin: const EdgeInsets.only(top: 5),
+                              child: const Text(
+                                'Send Money',
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                    ButtonBar(
+                      children: [
+                        Column(
+                          children: [
+                            const Icon(
+                              Icons.airplane_ticket_outlined,
+                              size: 30,
+                            ),
+                            Container(
+                              margin: const EdgeInsets.only(top: 5),
+                              child: const Text(
+                                'Ticket Code',
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                    ButtonBar(
+                      children: [
+                        Column(
+                          children: [
+                            const Icon(
+                              Icons.dashboard_outlined,
+                              size: 30,
+                            ),
+                            Container(
+                              margin: const EdgeInsets.only(top: 5),
+                              child: const Text(
+                                'See All',
+                              ),
+                            ),
                           ],
                         ),
                       ],
@@ -226,9 +286,227 @@ class HomePageLink extends State<HomePage> {
                             size: 30,
                             color: const Color.fromARGB(255, 222, 41, 28),
                           ),
+                          Container(
+                            margin: const EdgeInsets.only(top: 10),
+                            child: const Text(
+                              'Pulsa/Data',
+                            ),
+                          ),
                         ],
                       ),
+                    ],
+                  ),
+                  ButtonBar(
+                    children: [
+                      Column(
+                        children: [
+                          const Icon(
+                            Icons.flash_on,
+                            size: 30,
+                            color: const Color.fromARGB(255, 222, 41, 28),
+                          ),
+                          Container(
+                            margin: const EdgeInsets.only(top: 10),
+                            child: const Text(
+                              'Electricity',
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                  ButtonBar(
+                    children: [
+                      Column(
+                        children: [
+                          const Icon(
+                            Icons.local_hospital,
+                            size: 30,
+                            color: const Color.fromARGB(255, 222, 41, 28),
+                          ),
+                          Container(
+                            margin: const EdgeInsets.only(top: 10),
+                            child: const Text(
+                              'BPJS',
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                  ButtonBar(
+                    children: [
+                      Column(
+                        children: [
+                          const Icon(
+                            Icons.gamepad_outlined,
+                            size: 30,
+                            color: const Color.fromARGB(255, 222, 41, 28),
+                          ),
+                          Container(
+                            margin: const EdgeInsets.only(top: 10),
+                            child: const Text(
+                              'mgames',
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                 ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  ButtonBar(
+                    children: [
+                      Column(
+                        children: [
+                          const Icon(
+                            Icons.tv,
+                            size: 30,
+                            color: const Color.fromARGB(255, 222, 41, 28),
+                          ),
+                          Container(
+                            margin: const EdgeInsets.only(top: 10),
+                            child: const Text(
+                              'Cable TV\n & Internet',
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                  ButtonBar(
+                    children: [
+                      Column(
+                        children: [
+                          const Icon(
+                            Icons.water_drop,
+                            size: 30,
+                            color: const Color.fromARGB(255, 222, 41, 28),
+                          ),
+                          Container(
+                            margin: const EdgeInsets.only(top: 10),
+                            child: const Text(
+                              'PDAM',
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                  ButtonBar(
+                    children: [
+                      Column(
+                        children: [
+                          const Icon(
+                            Icons.card_membership,
+                            size: 30,
+                            color: const Color.fromARGB(255, 222, 41, 28),
+                          ),
+                          Container(
+                            margin: const EdgeInsets.only(top: 10),
+                            child: const Text(
+                              'Kartu Uang\n Elektronik',
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                  ButtonBar(
+                    children: [
+                      Column(
+                        children: [
+                          const Icon(
+                            Icons.more_horiz_sharp,
+                            size: 30,
+                            color: const Color.fromARGB(255, 222, 41, 28),
+                          ),
+                          Container(
+                            margin: const EdgeInsets.only(top: 10),
+                            child: const Text(
+                              'More',
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    height: 230,
+                    width: double.infinity,
+                    child: CarouselSlider(
+                      items: [
+                        for (int i = 0; i < itemImage.length; i++)
+                          Container(
+                            alignment: Alignment.center,
+                            margin: EdgeInsets.only(
+                                left: 10, right: 10, top: 30, bottom: 15),
+                            decoration: BoxDecoration(
+                              image: DecorationImage(
+                                image: itemImage[i],
+                                fit: BoxFit.cover,
+                              ),
+                              borderRadius: BorderRadius.circular(20),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey,
+                                  spreadRadius: 1,
+                                  blurRadius: 3,
+                                  offset: Offset(0, 2.5),
+                                ),
+                              ],
+                            ),
+                          )
+                      ],
+                      options: CarouselOptions(
+                          onPageChanged: (index, reason) {
+                            setState(() {
+                              print(reason.toString());
+                              currentIndex = index;
+                            });
+                          },
+                          autoPlay: true),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 125, bottom: 50),
+                    child: Align(
+                      child: Row(
+                        children: [
+                          for (int i = 0; i < itemImage.length; i++)
+                            Padding(
+                              padding: const EdgeInsets.only(left: 10.0),
+                              child: Container(
+                                height: 9,
+                                width: 9,
+                                decoration: BoxDecoration(
+                                  color: currentIndex == i
+                                      ? Colors.red
+                                      : const Color.fromARGB(
+                                          255, 180, 180, 180),
+                                  shape: BoxShape.circle,
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Color.fromARGB(255, 181, 181, 181)
+                                          .withOpacity(0.5),
+                                      spreadRadius: 1,
+                                      blurRadius: 3,
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                        ],
+                      ),
+                    ),
                   ),
                 ],
               ),
